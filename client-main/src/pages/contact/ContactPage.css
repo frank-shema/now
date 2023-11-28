@@ -1,0 +1,29 @@
+
+.contactcontent {
+  align-self: stretch;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-24xl);
+  box-sizing: border-box;
+}
+.contactpage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+ 
+  .contactcontent {
+    align-self: stretch;
+    width: auto;
+  }
+}
+
+

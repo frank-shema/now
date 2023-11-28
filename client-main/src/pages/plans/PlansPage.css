@@ -1,0 +1,112 @@
+.planspage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all {
+  position: relative;
+ color: rgb(0, 0, 0);
+ text-decoration: none;
+ font-weight: 400;
+ width: 20em;
+ white-space: nowrap;
+ cursor: pointer;
+}
+
+ .all.active {
+  color: blue;
+  font-weight: bold;
+}
+.plansnav {
+  width:80vw; /* Set your desired width */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* Start from the beginning */
+  gap: var(--gap-37xl);
+
+  /* Hide vertical scrollbar */
+  overflow-y: hidden;
+
+  overflow-x: auto;
+
+  white-space: nowrap;
+}
+
+/* If you want to remove the default scrollbar style */
+.plansnav::-webkit-scrollbar {
+  width: 0.5em; /* Adjust as needed */
+}
+
+.plansnav::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.plansnav::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+.planslist {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-104xl);
+  font-size: var(--font-size-smi);
+  color: var(--color-mediumslateblue-100);
+}
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-40xl) 0px var(--padding-95xl);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-26xl);
+  margin-left: 0 auto;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-darkslategray);
+  font-family: var(--font-inter);
+  margin-top: 5em;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .plansnav {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .plansnav {
+    display: none;
+  }
+
+  .planslist {
+    align-self: stretch;
+    width: auto;
+    margin: 0;
+  }
+
+  .content {
+    align-self: stretch;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .planslist {
+    align-self: stretch;
+    width: auto;
+  }
+}
